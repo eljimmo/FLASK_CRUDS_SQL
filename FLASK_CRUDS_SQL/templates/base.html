@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+{# head #}
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Asset Freight Tracker"/>
+    <meta name="author" content="Jim M"/>
+    <title>Asset Freight Tracker</title>
+
+    <title>{% block title %} {% endblock %}</title>
+    {% block styles %}
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='static\css\styles.css') }}">
+
+    {% endblock %}
+
+
+
+</head>
+
+
+    <body>
+
+   {% block body %} {% endblock %}
+
+    </body>
+</html>
